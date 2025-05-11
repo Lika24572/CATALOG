@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Магазин</h1>
+    <nav>
+      <button onclick="showCategory('drinks')">Напитки</button>
+      <button onclick="showCategory('food')">Еда</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog" id="catalog"></section>
+
+    <section class="cart">
+      <h2>Корзина</h2>
+      <ul id="cart-items"></ul>
+      <p>Итого: <span id="total">0</span> ₽</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
